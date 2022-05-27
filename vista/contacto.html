@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="../img/Captura de pantalla 2022-04-30 211317.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <div class="grid__div">
+<header>
+    <nav class="header__nav">
+        <img class="header__logo" src="../img/Captura de pantalla 2022-04-30 211317.png" alt="logo">
+        <ul class="header__list">               
+            <li class="header__item"><a class="header__anchor" href="../index.html">Inicio</a></li>
+            <li class="header__item"><a class="header__anchor" href="./vehiculos.html">Vehículos</a></li>
+            <li class="header__item"><a class="header__anchor" href="./financiacion.html">Financiacíon</a></li>
+            <li class="header__item"><a class="header__anchor" href="./concesionario.html">Concesionario</a></li>
+            <li class="header__item"><a class="header__anchor" href="./contacto.html">Contacto</a></li>
+            
+        </ul>
+    </nav>
+</header>
+    <main>
+        <h1>contacto</h1>
+        <hr>
+        
+        <form class="contact__form" action="" method="get" enctype="text/plain">
+            <div class="izquierda">
+            <div class="hijos">
+                <label  for="userName"><b>Nombre:</b></label>
+                <input type="text" name="userName" id="userName" placeholder="Escriba su nombre" required>
+            </div>
+            <div class="hijos">
+                <label  for="apellido">Apellido:</label>
+                <input  type="text" name="apellido" id="apellido" placeholder="Escriba su apellido" required>
+            </div>
+            <div class="hijos">
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" id="email" placeholder="Escriba su e-mail" required>
+            </div>
+            <div class="hijos">
+                <label for="dni">Su dni</label>
+                <input type="number" name="dni" id="dni" placeholder="Escriba su dni" required> 
+            </div>
+            <div class="hijos">
+                <label  for="motivo">Motivo</label>
+                <select name="motivo" id="motivo">
+                    <option value=""disabled selected>seleccione</option>
+                    <option value="usuario">Soy usuario de sus vehiculos y necesito informacion sobre mi Vehiculo</option>
+                    <option value="servicios">Necesito informacion acerca de sus servicios y productos</option>
+                    <option value="otros">otros</option>
+                </select>
+            </div>
+            <div>
+                <label class="terminos" for="terminosCondicionesInfo">acepto los terminos y condiciones</label>
+                <input class="checkbox" type="checkbox" name="terminosCondicionesInfo" id="terminosCondicionesInfo"> 
+            </div>
+            </div>
+            <div class="derecha">
+                <div>
+                <label for="comentario">comentario</label>
+                <textarea name="comentario" id="comentario" cols="30" rows="10"></textarea>
+            </div>
+            <div class="hijos">    
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpiar formulario">
+            </div>   
+            </div>
+        </form>
+        
+
+    </main>
+    <footer class="footer">
+        <div>
+            <h2 class="footer__txt">Seguinos en</h2>
+            <img class="footer__img" src="../img/facebook.png" alt="facebook">
+            <img class="footer__img" src="../img/simbolo-twitter.png" alt="twitter">
+        </div>
+        <div>
+             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias vero, temporibus odit repudiandae deleniti obcaecati. Culpa nostrum repellendus, provident maiores architecto veritatis dignissimos, reprehenderit quis, quibusdam enim mollitia? Quia, repudiandae?</p>
+        </div>
+    </footer>
+</div>    
+</body>
+    
+</html>

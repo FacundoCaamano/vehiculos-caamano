@@ -1,0 +1,511 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+html{
+    background-color: #fefefe;
+}
+
+.grid__div{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+.header__nav{
+    display: flex;
+    background-color: rgb(255, 255, 255);  
+    justify-content: space-between;
+    border: 10px groove;
+    font-size: 1.5rem;
+}
+
+.header__logo{
+    height: 100px;
+}
+
+.header__list{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    width: 50%;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.main{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    border: 10px groove;
+    
+}
+
+.autos{
+    background-image: url(../img/autos.jpg);
+    background-repeat: no-repeat;
+    background-size: 1000px;
+    height: 500px;
+    width: 60rem;
+    display: flex;
+    justify-content: flex-start;
+    border: 1px solid black;
+    margin: 1rem;
+}
+.auto__btn{
+    margin: 1rem;
+    padding: 0.5rem;
+    background-color: rgb(7, 1, 43);
+    border: 5px solid black ;
+    color: white;
+    height: 3rem;
+}
+.auto__txt{
+    margin-top: 1rem;
+    background-color: white;
+    font-size: 1rem;
+    border: #0a056b groove 3px;
+    padding: 10px;
+    border-radius: 10px;
+    height: 3rem;
+}
+
+.oportunidades{
+    height: 41rem;
+    width: 60rem;
+    background-image: url(../img/oportunidades.jpg);
+    background-repeat: no-repeat;
+    display: flex;
+    border: 1px solid black;
+    margin-bottom: 1rem;
+}
+
+.oportunidades__btn{
+    margin: 1rem;
+    padding: 0.5rem;
+    background-color: rgb(7, 1, 43);
+    border: 5px solid black ;
+    color: white;
+    height: 3rem;
+}
+
+.oportunidades__txt{
+    margin-top: 1rem;
+    background-color: white;
+    font-size: 1rem;
+    border: #0a056b groove 3px;
+    padding: 10px;
+    border-radius: 10px;
+    height: 3rem;
+}
+.footer{
+    background-color: rgb(199, 237, 237);
+    display: flex;
+    justify-content: space-between;
+    border: 10px groove;
+    align-items: center;
+}
+
+.footer__txt{
+    display: inline-block;
+}
+
+.footer__img{
+    height: 3rem;
+    margin-left: 1rem;
+}
+.footer p{
+    width: 500px;
+}
+
+.modelos__financiacion{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.modelos__img{
+    width: 320px;
+}
+.model__btn{
+    display: block;
+    margin: 1rem;
+    padding: 0.5rem;
+    background-color: rgb(7, 1, 43);
+    border: 5px solid black ;
+    color: white;
+    height: 3rem;
+    width: max-content;
+}
+
+.model__img {
+    width: 320px;
+    margin-top: 4rem;
+}
+
+.autos__texto{
+    margin-bottom: 2rem;
+    padding: 5px;
+}
+.modelos__img--tamaño{
+    margin-top: 4rem;
+}
+.descripcion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 450px;
+}
+.autos__texto{
+    width: 300px;
+}
+.autos__descripcion{
+    width: 300px;
+}
+.imgFinanciacion{
+    width: 300px;
+}
+
+
+.contenedor__opcion{
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+    height: 420px;
+    justify-content: space-between;
+    align-items: center;
+}
+.opcion{
+    border: 1px solid ;
+    width: 320px;
+    height: 120px;
+    background-color: rgb(183, 238, 220);
+    
+}
+.mapaContenedor{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+.contact__form{
+    padding: 10px;
+    background-color: #181818;
+    color: white;
+    margin: 5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-areas: "izquierda derecha";
+    align-items: center;
+    border: 10px groove rgb(123, 122, 114);
+    text-align: center;
+   
+}
+
+.hijos{
+    padding: 10px;
+}
+.checkbox{
+    width: 100px;
+}
+label , input , select , textarea{
+    width: 100%;
+    padding: 5px;
+}
+.derecha{
+    grid-area: derecha;
+}
+
+.izquierda{
+    grid-area: izquierda;
+}
+
+/*media queris*/
+
+@media screen and (max-width: 1024px){
+    .grid__div{
+        grid-template-columns: 1fr;
+        border: none;
+        
+    }
+
+    .header__list{
+        flex-direction: row;
+        justify-content: space-between;
+        width: 80%;
+    }
+    
+}
+@media screen and (max-width: 768px) {
+    .grid__div{
+        grid-template-columns: 1fr;
+    }
+    .header__nav{
+        flex-direction: column;   
+        height: 50vh;
+        font-size: 2rem;
+        
+    }
+    
+    .header__logo{
+        height: 70px;
+        width: 100px;
+    }
+    
+    .header__list{
+        flex-direction: column;
+        height: 100%;
+        
+    }
+    
+    .main{
+        flex-direction: column;
+        align-items: center;  
+        border:none;
+    }
+    
+    .autos{
+        background-size: 100%;
+        background-position: center;
+        height: 30vh;
+        width: 100%;
+        border: 1px solid black;
+    }
+      
+    .oportunidades{
+        height: 45vh;
+        width: 100%;
+        background-size: 100%;
+        background-position: center;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .oportunidades__btn{
+        width: max-content;  
+    }
+    
+    .oportunidades__txt{
+        height: 4rem;
+        width: max-content;
+    }
+    .footer{
+        background-color: rgb(199, 237, 237);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border: 10px groove;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .footer__txt{
+        display: block;
+    }
+    
+    .footer__img{
+        height: 3rem;
+        margin-left: 1rem;
+    }
+    .footer p{
+        width: 100%;
+        padding: 10px;
+    }
+    
+    
+    .contact__form{
+        padding: 10px;
+        background-color: #181818;
+        color: white;
+        margin: 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr; 
+        grid-template-areas: "izquierda "
+                             "derecha";
+        align-items: center;
+        border: 10px groove rgb(123, 122, 114);
+        text-align: center;
+       
+    }
+    
+    .hijos{
+        padding: 10px;
+    }
+    .checkbox{
+        width: 100px;
+    }
+    label , input , select , textarea{
+        width: 100%;
+        padding: 5px;
+    }
+    .derecha{
+        grid-area: derecha;
+    }
+    
+    .izquierda{
+        grid-area: izquierda;
+    }
+
+    
+    .descripcion{
+        width: 470px;
+    }
+
+
+    
+}
+
+@media screen and (max-width: 425px){
+    .header__nav{
+        flex-direction: column;   
+        height: 50vh;
+        font-size: 2rem;
+        
+    }
+    
+}
+
+
+
+@media screen and (min-width:768px) {
+    .modelos__img{
+        width: 600px;
+    }
+    .model__img {
+        width: 450px;
+        margin-top: 4rem;
+    }
+    .descripcion{
+        width: 750px;   
+    }
+    .autos__texto{
+        width: 650px;
+    }
+    .autos__descripcion{
+        width: 600px;
+    }
+    .imgFinanciacion{
+        width: 700px;
+    } 
+    .contenedor__opcion{
+        border: 1px solid red;
+        display: flex;
+        flex-direction: column;
+        height: 820px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .opcion{
+        border: 1px solid ;
+        width: 520px;
+        height: 220px;
+        background-color: rgb(183, 238, 220);
+        
+    }
+}
+
+@media screen and (min-width:1020px) {
+    .modelos__financiacion{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .modelos__img{
+        width: 300px;
+    }
+    .modelos{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .model__img {
+        width: 320px;
+        margin: none;
+        
+    }
+    .descripcion{
+        width: 1020px;   
+    }
+    .autos__texto{
+        width: 850px;
+    }
+    .autos__descripcion{
+        width: 700px;
+    }
+    .imgFinanciacion{
+        width: 1000px;
+    }
+    .contenedor__opcion{
+        border: 1px solid;
+        display: flex;
+        flex-direction: column;
+        height: 720px;
+        justify-content: space-around;
+        align-items: center;
+        background-image: url(../img/luxurious-black-car-riding-in-the-street-with-beautiful-sky.jpg);
+        background-size: 1024px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .opcion{
+        border: 1px solid ;
+        width: 520px;
+        height: 200px;
+        background-color: rgb(183, 238, 220);
+        
+    }
+}
+
+@media screen and (min-width:1440px) {
+    .modelos__img{
+        width: 600px;
+    }
+    .model__img {
+        width: 520px;
+        margin-top: none;
+    }
+    .descripcion{
+        width: 1020px;
+        display: flex;
+        margin: left 120rem;
+        
+    }
+    .autos__texto{
+        width: 1000px;
+        margin: 2rem;
+    }
+    .autos__descripcion{
+        width: 900px;
+        margin: 2rem;
+    }
+    .imgFinanciacion{
+        width: 1200px;
+    }
+    .contenedor__opcion{
+        border: 1px solid;
+        display: flex;
+        flex-direction: row;
+        height: 720px;
+        justify-content: space-around;
+        align-items: center;
+        background-image: url(../img/luxurious-black-car-riding-in-the-street-with-beautiful-sky.jpg);
+        background-size: 2000px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .opcion{
+        border: 1px solid ;
+        width: 320px;
+        height: 200px;
+        background-color: rgb(183, 238, 220);
+        padding: 10px;
+        
+    }
+
+}
