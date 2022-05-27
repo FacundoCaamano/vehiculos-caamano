@@ -20,6 +20,21 @@ html{
     justify-content: space-between;
     border: 10px groove;
     font-size: 1.5rem;
+    animation-name: aparecer;
+    animation-duration: 2s ;
+     
+}
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 100;
+    }
 }
 
 .header__logo{
@@ -35,6 +50,11 @@ html{
     padding: 2rem;
 }
 
+.header__list li :hover{
+    background-color: rgb(239, 200, 200);
+    font-size: 2rem;
+}
+
 .main{
     background-color: rgb(255, 255, 255);
     display: flex;
@@ -42,6 +62,10 @@ html{
     align-items: center;  
     border: 10px groove;
     
+}
+
+h1{
+    transform: translate(40%);
 }
 
 .autos{
@@ -205,6 +229,9 @@ html{
     border: 10px groove rgb(123, 122, 114);
     text-align: center;
    
+}
+.contact__form:hover{
+    border: 5px solid red;
 }
 
 .hijos{
