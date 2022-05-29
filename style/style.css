@@ -230,9 +230,7 @@ h1{
     text-align: center;
    
 }
-.contact__form:hover{
-    border: 5px solid red;
-}
+
 
 .hijos{
     padding: 10px;
@@ -244,6 +242,11 @@ label , input , select , textarea{
     width: 100%;
     padding: 5px;
 }
+
+input:hover{
+    border: 2px solid red;
+}
+
 .derecha{
     grid-area: derecha;
 }
