@@ -2,11 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Nunito', sans-serif;
-}
-
-html{
-    background-color: #fefefe;
+    /*font-family: 'Nunito', sans-serif;*/
 }
 
 .grid__div{
@@ -14,119 +10,28 @@ html{
     grid-template-rows: auto 1fr auto;
 }
 
-.header__nav{
-    display: flex;
-    background-color: rgb(255, 255, 255);  
-    justify-content: space-between;
-    border: 10px groove;
-    font-size: 1.5rem;
+.navegacion{
+    background-color: rgb(240, 240, 240);
     animation-name: aparecer;
-    animation-duration: 2s ;
-     
+    animation-duration: 1s;
 }
-
 @keyframes aparecer {
-    0% {
+    0%{
         opacity: 0;
     }
-    50% {
-        opacity: 0.5;
-    }
-    100% {
-        opacity: 100;
+    100%{
+        opacity: 1;
     }
 }
-
-.header__logo{
-    height: 100px;
+.logo{
+    height: 80px;
+    border-radius: 50px;
 }
-
-.header__list{
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    width: 50%;
-    justify-content: space-between;
-    padding: 2rem;
-}
-
-.header__list li :hover{
-    background-color: rgb(239, 200, 200);
-    font-size: 2rem;
-}
-
-.main{
-    background-color: rgb(255, 255, 255);
-    display: flex;
-    flex-direction: column;
-    align-items: center;  
-    border: 10px groove;
-    
-}
-
 h1{
-    transform: translate(40%);
-}
-
-.autos{
-    background-image: url(../img/autos.jpg);
-    background-repeat: no-repeat;
-    background-size: 1000px;
-    height: 500px;
-    width: 60rem;
-    display: flex;
-    justify-content: flex-start;
-    border: 1px solid black;
-    margin: 1rem;
-}
-.auto__btn{
-    margin: 1rem;
-    padding: 0.5rem;
-    background-color: rgb(7, 1, 43);
-    border: 5px solid black ;
-    color: white;
-    height: 3rem;
-}
-.auto__txt{
-    margin-top: 1rem;
-    background-color: white;
-    font-size: 1rem;
-    border: #0a056b groove 3px;
-    padding: 10px;
-    border-radius: 10px;
-    height: 3rem;
-}
-
-.oportunidades{
-    height: 41rem;
-    width: 60rem;
-    background-image: url(../img/oportunidades.jpg);
-    background-repeat: no-repeat;
-    display: flex;
-    border: 1px solid black;
-    margin-bottom: 1rem;
-}
-
-.oportunidades__btn{
-    margin: 1rem;
-    padding: 0.5rem;
-    background-color: rgb(7, 1, 43);
-    border: 5px solid black ;
-    color: white;
-    height: 3rem;
-}
-
-.oportunidades__txt{
-    margin-top: 1rem;
-    background-color: white;
-    font-size: 1rem;
-    border: #0a056b groove 3px;
-    padding: 10px;
-    border-radius: 10px;
-    height: 3rem;
+    transform: translate(10%);
 }
 .footer{
-    background-color: rgb(199, 237, 237);
+    background-color:  rgb(240, 240, 240);
     display: flex;
     justify-content: space-between;
     border: 10px groove;
@@ -144,16 +49,20 @@ h1{
 .footer p{
     width: 500px;
 }
+.financiacion__txt{
+    display: inline-block;
+    font-size: 2rem;
+    margin-left: 10px;
+    border: #504c4c 5px solid;
+    padding: 10px;
+    
+}
 
-.modelos__financiacion{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.mainFinanciacion{
+    height: 700px;
 }
-.modelos__img{
-    width: 320px;
-}
+
+
 .model__btn{
     display: block;
     margin: 1rem;
@@ -164,35 +73,6 @@ h1{
     height: 3rem;
     width: max-content;
 }
-
-.model__img {
-    width: 320px;
-    margin-top: 4rem;
-}
-
-.autos__texto{
-    margin-bottom: 2rem;
-    padding: 5px;
-}
-.modelos__img--tamaño{
-    margin-top: 4rem;
-}
-.descripcion{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 450px;
-}
-.autos__texto{
-    width: 300px;
-}
-.autos__descripcion{
-    width: 300px;
-}
-.imgFinanciacion{
-    width: 300px;
-}
-
 
 .contenedor__opcion{
     border: 1px solid;
@@ -261,13 +141,6 @@ input:hover{
     .grid__div{
         grid-template-columns: 1fr;
         border: none;
-        
-    }
-
-    .header__list{
-        flex-direction: row;
-        justify-content: space-between;
-        width: 80%;
     }
     
 }
@@ -275,62 +148,14 @@ input:hover{
     .grid__div{
         grid-template-columns: 1fr;
     }
-    .header__nav{
-        flex-direction: column;   
-        height: 50vh;
-        font-size: 2rem;
-        
-    }
-    
-    .header__logo{
-        height: 70px;
-        width: 100px;
-    }
-    
-    .header__list{
-        flex-direction: column;
-        height: 100%;
-        
-    }
-    
     .main{
         flex-direction: column;
         align-items: center;  
         border:none;
     }
     
-    .autos{
-        background-size: 100%;
-        background-position: center;
-        height: 30vh;
-        width: 100%;
-        border: 1px solid black;
-    }
-      
-    .oportunidades{
-        height: 45vh;
-        width: 100%;
-        background-size: 100%;
-        background-position: center;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-    
-    .oportunidades__btn{
-        width: max-content;  
-    }
-    
-    .oportunidades__txt{
-        height: 4rem;
-        width: max-content;
-    }
     .footer{
-        background-color: rgb(199, 237, 237);
-        display: flex;
         flex-direction: column;
-        justify-content: space-between;
-        border: 10px groove;
-        align-items: center;
         width: 100%;
     }
     
@@ -391,38 +216,9 @@ input:hover{
     
 }
 
-@media screen and (max-width: 425px){
-    .header__nav{
-        flex-direction: column;   
-        height: 50vh;
-        font-size: 2rem;
-        
-    }
-    
-}
-
-
 
 @media screen and (min-width:768px) {
-    .modelos__img{
-        width: 600px;
-    }
-    .model__img {
-        width: 450px;
-        margin-top: 4rem;
-    }
-    .descripcion{
-        width: 750px;   
-    }
-    .autos__texto{
-        width: 650px;
-    }
-    .autos__descripcion{
-        width: 600px;
-    }
-    .imgFinanciacion{
-        width: 700px;
-    } 
+    
     .contenedor__opcion{
         border: 1px solid red;
         display: flex;
@@ -441,36 +237,7 @@ input:hover{
 }
 
 @media screen and (min-width:1020px) {
-    .modelos__financiacion{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-    .modelos__img{
-        width: 300px;
-    }
-    .modelos{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-    .model__img {
-        width: 320px;
-        margin: none;
-        
-    }
-    .descripcion{
-        width: 1020px;   
-    }
-    .autos__texto{
-        width: 850px;
-    }
-    .autos__descripcion{
-        width: 700px;
-    }
-    .imgFinanciacion{
-        width: 1000px;
-    }
+    
     .contenedor__opcion{
         border: 1px solid;
         display: flex;
@@ -493,27 +260,7 @@ input:hover{
 }
 
 @media screen and (min-width:1440px) {
-    .modelos__img{
-        width: 600px;
-    }
-    .model__img {
-        width: 520px;
-        margin-top: none;
-    }
-    .descripcion{
-        width: 1020px;
-        display: flex;
-        margin: left 120rem;
-        
-    }
-    .autos__texto{
-        width: 1000px;
-        margin: 2rem;
-    }
-    .autos__descripcion{
-        width: 900px;
-        margin: 2rem;
-    }
+    
     .imgFinanciacion{
         width: 1200px;
     }
