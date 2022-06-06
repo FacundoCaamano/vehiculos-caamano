@@ -82,6 +82,10 @@
     width: 800px;
 }
 
+.btn.btn-primary:hover{
+    background-color: #000000;
+}
+
 .row-diaspositivas{
     justify-content: center;
 }
