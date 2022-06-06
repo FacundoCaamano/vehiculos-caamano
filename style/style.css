@@ -26,7 +26,29 @@
 .logo{
     height: 80px;
     border-radius: 50px;
+    animation-name: giro;
+    animation-duration: 2s;
+    animation-delay: 1s;
 }
+@keyframes giro{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.nav-link:hover{
+    background-color: #000000;
+    color: white;
+    transition: 1s;
+}
+.nav-link.active:hover{
+    background-color: #000000;
+    color: white;
+}
+
+
+
+
 .titulo{
     display: flex;
     justify-content: center;
@@ -50,6 +72,10 @@
 .footer__img{
     height: 3rem;
     margin-left: 1rem;
+}
+.footer__img:hover{
+    transform: rotate(360deg);
+    transition: 1s;
 }
 
 .footer p{
