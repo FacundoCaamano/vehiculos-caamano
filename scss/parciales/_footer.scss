@@ -1,0 +1,27 @@
+.footer{
+    background-color: $colorFondo;
+    display: flex;
+    justify-content: space-between;
+    border: 10px groove;
+    align-items: center;
+
+    &__txt{
+        display: inline-block;
+    }
+    &__img{
+        height: 3rem;
+        margin-left: 1rem;
+    }
+    &__img:hover{
+        transform: rotate(360deg);
+        transition: 1s;
+    }
+    .footer p{
+        width: 800px;
+    }
+}
+
+
+
+
+

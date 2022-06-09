@@ -1,0 +1,81 @@
+@media screen and (max-width: 1024px){
+    .grid__div{
+        grid-template-columns: 1fr;
+        border: none;
+    }
+    
+}
+@media screen and (max-width: 768px) {
+    .grid__div{
+        grid-template-columns: 1fr;
+    }
+    .main{
+        flex-direction: column;
+        align-items: center;  
+        border:none;
+    }
+    .footer{
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .footer__txt{
+        display: block;
+    }
+    
+    .footer__img{
+        height: 3rem;
+        margin-left: 1rem;
+    }
+    .footer p{
+        width: 100%;
+        padding: 10px;
+    }
+    .contact__form{
+        padding: 10px;
+        background-color: #181818;
+        color: white;
+        margin: 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr; 
+        grid-template-areas: "izquierda "
+                             "derecha";
+        align-items: center;
+        border: 10px groove rgb(123, 122, 114);
+        text-align: center;
+       
+    }
+    
+    .hijos{
+        padding: 10px;
+    }
+    .checkbox{
+        width: 100px;
+    }
+    label , input , select , textarea{
+        width: 100%;
+        padding: 5px;
+    }
+    .derecha{
+        grid-area: derecha;
+    }
+    
+    .izquierda{
+        grid-area: izquierda;
+    }
+    
+}
+
+
+@media screen and (max-width:768px) {
+    .sectionOpciones{
+        background-image: none;
+        height: max-content;
+    }
+    .card-opciones{
+        height: 250px;
+        margin: 1rem;
+        margin-top: 10%;
+    }
+}
