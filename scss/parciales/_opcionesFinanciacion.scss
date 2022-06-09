@@ -1,0 +1,22 @@
+.card-opciones{
+    height: 250px;
+    margin: 2rem;
+    margin-top: 60%;
+}
+section{
+    .opcionesFinanciacion__titulo{
+        display: flex;
+        justify-content: center;
+        margin: 1rem;
+        border-bottom: #7f7f7f 5px groove;
+        
+    }
+    .sectionOpciones{
+        height: 1200px;
+    }
+    .card-body-opciones{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}

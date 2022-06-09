@@ -1,0 +1,36 @@
+.navegacion{
+    background-color: $colorFondo;
+    animation-name: aparecer;
+    animation-duration: 1s;
+    
+    .logo{
+        height: 80px;
+        border-radius: 50px;
+        animation-name: giro;
+        animation-duration: 2s;
+        animation-delay: 1s;
+    }
+    .nav-link:hover{
+        background-color: #000000;
+        color: white;
+        transition: 1s;
+    }
+    .nav-link.active:hover{
+        background-color: #000000;
+        color: white;
+    }
+}
+
+@keyframes aparecer {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes giro{
+    100%{
+        transform: rotate(360deg);
+    }
+}

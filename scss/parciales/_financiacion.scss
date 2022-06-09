@@ -1,0 +1,25 @@
+
+.mainFinanciacion{
+    height: 700px;
+    .financiacion__txt{
+        display: flex;
+        justify-content: center;
+        font-size: 2rem;
+        margin: 10px;
+        border-bottom: #504c4c 5px solid;
+        padding: 10px;
+        
+    }
+}
+
+
+.row-diaspositivas{
+    justify-content: center;
+    .carousel-item{
+        padding: 20px;
+    }
+    .btn-diaspositivas{
+        width: 600px;
+        height: 600px;
+    }
+}
