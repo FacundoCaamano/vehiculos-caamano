@@ -6,6 +6,21 @@
   /*font-family: 'Nunito', sans-serif;*/
 }
 
+h1 {
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+h5 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
 .navegacion {
   background-color: #f0f0f0;
   -webkit-animation-name: aparecer;
@@ -117,8 +132,44 @@
   width: 800px;
 }
 
+.btn {
+  border: black 1px solid;
+  background: #f0f0f0;
+  color: #000000;
+  font-weight: 500;
+}
+
 .btn.btn-primary:hover {
   background-color: #000000;
+}
+
+.btn_rojo {
+  background: red;
+  color: white;
+}
+
+.btn_blanco {
+  background: #fbfbfb;
+}
+
+.btn_cobre {
+  background: #837910;
+  color: white;
+}
+
+.btn_azul {
+  background: #0059ff;
+  color: white;
+}
+
+.btn_gris {
+  background: #413a3a;
+  color: white;
+}
+
+.btn_azul2 {
+  background: #020b71;
+  color: white;
 }
 
 .mainFinanciacion {
@@ -174,7 +225,7 @@ section .sectionOpciones {
   height: 1200px;
 }
 
-section .card-body-opciones {
+section .card-body-opciones, section .card-body-opciones2, section .card-body-opciones3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -185,6 +236,15 @@ section .card-body-opciones {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  background-color: #efe7bb;
+}
+
+section .card-body-opciones2 {
+  background-color: #f8f5a5;
+}
+
+section .card-body-opciones3 {
+  background-color: bisque;
 }
 
 .mapaContenedor {
