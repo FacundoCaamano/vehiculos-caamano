@@ -4,3 +4,5 @@ Mejora del SEO
 --Agrege los titulos de cada pag.
 --Añadi la descripcion a cada pag.
 --optimize las fotos.
+
+uso de mixins ,maps y extend en el parcial "opcionesFinanciacion",
