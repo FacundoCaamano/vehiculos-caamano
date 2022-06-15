@@ -1,0 +1,33 @@
+$btn:(
+    "rojo": red,
+    "blanco": rgb(251, 251, 251),
+    "cobre" : rgb(131, 121, 16),
+    "azul" : rgb(0, 89, 255),
+    "gris" : rgb(65, 58, 58),
+    "azul2" :rgb(2, 11, 113),
+    "textoBlanco": white,
+);
+
+.btn_rojo{
+    background: map-get($map: $btn, $key: rojo);
+    color: map-get($map: $btn, $key: textoBlanco );
+}
+.btn_blanco{
+    background: map-get($map: $btn, $key: blanco);
+}
+.btn_cobre{
+    background: map-get($map: $btn, $key: cobre);
+    color: map-get($map: $btn, $key: textoBlanco );
+}
+.btn_azul{
+    background: map-get($map: $btn, $key: azul);
+    color: map-get($map: $btn, $key: textoBlanco );
+}
+.btn_gris{
+    background: map-get($map: $btn, $key: gris);
+    color: map-get($map: $btn, $key: textoBlanco );
+}
+.btn_azul2{
+    background: map-get($map: $btn, $key: azul2);
+    color: map-get($map: $btn, $key: textoBlanco );
+}

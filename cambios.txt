@@ -1,0 +1,6 @@
+Mejora del SEO
+
+--cambie los h5 de boostrap por h2.
+--Agrege los titulos de cada pag.
+--Añadi la descripcion a cada pag.
+--optimize las fotos.
