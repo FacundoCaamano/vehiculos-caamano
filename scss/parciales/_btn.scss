@@ -1,10 +1,11 @@
 /*botones de las cartas*/
 
 .btn{
-    border: black 1px solid;
+    border: black 2px groove;
     background: $colorFondo;
     color: #000000;
     font-weight: 500;
+    font-size: 1.3rem;
     width: 200px;
 }
 .btn.btn-primary:hover{

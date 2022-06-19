@@ -1,6 +1,4 @@
 @charset "UTF-8";
-/*importaciones*/
-/*variables*/
 /*reset*/
 * {
   margin: 0;
@@ -120,10 +118,11 @@ p {
 
 /*botones de las cartas*/
 .btn {
-  border: black 1px solid;
+  border: black 2px groove;
   background: rgb(240, 240, 240);
   color: #000000;
   font-weight: 500;
+  font-size: 1.3rem;
   width: 200px;
 }
 
