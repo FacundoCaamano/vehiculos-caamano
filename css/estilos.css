@@ -1,3 +1,7 @@
+@charset "UTF-8";
+/*importaciones*/
+/*variables*/
+/*reset*/
 * {
   margin: 0;
   padding: 0;
@@ -5,6 +9,7 @@
   font-family: "Nunito", sans-serif;
 }
 
+/*tamaño y peso para los textos*/
 h1 {
   font-size: 3rem;
   font-weight: 1000;
@@ -20,6 +25,7 @@ p {
   font-weight: 600;
 }
 
+/*barra de navegacion*/
 .navegacion {
   background-color: rgb(240, 240, 240);
   -webkit-animation-name: aparecer;
@@ -74,6 +80,7 @@ p {
     transform: rotate(360deg);
   }
 }
+/*titulos*/
 .titulo {
   display: flex;
   justify-content: center;
@@ -84,6 +91,7 @@ p {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
+/*footer*/
 .footer {
   background-color: rgb(240, 240, 240);
   display: flex;
@@ -110,6 +118,7 @@ p {
   width: 80%;
 }
 
+/*botones de las cartas*/
 .btn {
   border: black 1px solid;
   background: rgb(240, 240, 240);
@@ -122,6 +131,7 @@ p {
   background-color: #000000;
 }
 
+/*maps para botones en seccion vehiculos*/
 .btn_rojo {
   background: red;
   color: white;
@@ -151,6 +161,7 @@ p {
   color: white;
 }
 
+/*pagina financiacion*/
 .mainFinanciacion {
   height: 700px;
 }
@@ -174,6 +185,7 @@ p {
   height: 600px;
 }
 
+/*cartas opciones de finaciacion*/
 .card-opciones {
   height: 250px;
   margin: 2rem;
@@ -202,11 +214,13 @@ section .card-body-opciones3 {
   background-color: bisque;
 }
 
+/*mapa de concesionarios*/
 .mapaContenedor {
   display: flex;
   justify-content: center;
 }
 
+/*formulario*/
 .contact__form {
   padding: 10px;
   background-color: #181818;
@@ -239,6 +253,7 @@ section .card-body-opciones3 {
   grid-area: izquierda;
 }
 
+/*media queris*/
 @media screen and (max-width: 768px) {
   .main {
     flex-direction: column;
