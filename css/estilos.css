@@ -116,6 +116,16 @@ p {
   width: 80%;
 }
 
+.card-modelos {
+  height: 300px;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 /*botones de las cartas*/
 .btn {
   border: black 2px groove;
@@ -128,36 +138,6 @@ p {
 
 .btn.btn-primary:hover {
   background-color: #000000;
-}
-
-/*maps para botones en seccion vehiculos*/
-.btn_rojo {
-  background: red;
-  color: white;
-}
-
-.btn_blanco {
-  background: rgb(251, 251, 251);
-}
-
-.btn_cobre {
-  background: rgb(131, 121, 16);
-  color: white;
-}
-
-.btn_azul {
-  background: rgb(0, 89, 255);
-  color: white;
-}
-
-.btn_gris {
-  background: rgb(65, 58, 58);
-  color: white;
-}
-
-.btn_azul2 {
-  background: rgb(2, 11, 113);
-  color: white;
 }
 
 /*pagina financiacion*/
