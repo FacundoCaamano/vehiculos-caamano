@@ -223,7 +223,7 @@ section .card-body-opciones3 {
   padding: 5px;
 }
 .contact__form input:hover {
-  border: 2px solid red;
+  border: 3px groove rgb(219, 189, 189);
 }
 .contact__form .derecha {
   grid-area: derecha;
