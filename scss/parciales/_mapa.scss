@@ -1,5 +1,24 @@
 /*mapa de concesionarios*/
-.mapaContenedor{
+.mapa{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    .mapa__contenedor{
+        display: flex;
+        flex-direction: column;
+        margin: 20px 0px;
+        border: 10px groove rgb(123, 122, 114);
+        border-radius: 10px;
+        width: 90%;
+        background-color: $colorFondo;
+    }
+    div{
+        border-left: 5px groove rgb(123, 122, 114);
+        margin: 10px;
+    }
+    .mapa__direccion{
+        width: 100%;
+        height: 700px;
+        
+    }
 }
