@@ -8,9 +8,6 @@
     .logo{
         height: 80px;
         border-radius: 50px;
-        animation-name: giro;
-        animation-duration: 2s;
-        animation-delay: 1s;
     }
     .nav-link:hover{
         background-color: #000000;
@@ -29,10 +26,5 @@
     }
     100%{
         opacity: 1;
-    }
-}
-@keyframes giro{
-    100%{
-        transform: rotate(360deg);
     }
 }
