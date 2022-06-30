@@ -311,8 +311,7 @@ section .card-body-opciones3 {
   .izquierda {
     grid-area: izquierda;
   }
-}
-@media screen and (max-width: 768px) {
+
   .sectionOpciones {
     height: -webkit-max-content;
     height: -moz-max-content;
