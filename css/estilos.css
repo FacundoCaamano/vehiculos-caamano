@@ -183,14 +183,14 @@ section .sectionOpciones {
 section .card-body-opciones, section .card-body-opciones3, section .card-body-opciones2 {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  background-color: rgb(239, 231, 187);
+  justify-content: space-around;
+  background-color: rgb(240, 240, 240);
 }
 section .card-body-opciones2 {
-  background-color: rgb(248, 245, 165);
+  background-color: rgb(255, 251, 230);
 }
 section .card-body-opciones3 {
-  background-color: bisque;
+  background-color: rgb(216, 204, 188);
 }
 
 /*mapa de concesionarios*/
